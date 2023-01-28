@@ -1,14 +1,14 @@
   pipeline {                    
       agent any
          stages {
-              stage('Clone repo'){
+              stage('git'){
                 steps{
                       git branch: 'main', credentialsId: 'GitHubcred', url: 'https://github.com/Ravitejano1/API_Repositorypractice.git'
                 }
               }
-              stage('Maven Build'){
+              stage('Build'){
                 steps{
-                         sh 'mvn package'
+                         sh 'mvn clean package'
                 }
             }
         }
