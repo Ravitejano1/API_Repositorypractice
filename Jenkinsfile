@@ -15,3 +15,4 @@
                 sh "${mavenCMD} clean package"
             }
         }
+  }
