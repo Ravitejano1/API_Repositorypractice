@@ -8,7 +8,7 @@
               }
               stage('Build'){
                 steps{
-                         sh 'mvn validate'
+                         bat 'mvn validate'
                 }
             }
         }
